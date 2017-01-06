@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Guessing Game</title>
+<!-- Bootstrap and CSS here-->
+    <style type="text/css"></style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body class="container">
+      <div id='app' class='center'>
+        <div id='headers' >
+<!-- Title and subtitles! -->
+          <header>
+            <h1 id="title">Play the Guessing Game!!</h1>
+            <h2 id="message">Guess a number from 1-100</h2>
+            <h3 id="nextMessage"></h3>
+           </header>
+        </div>
+        <div id='main'>
+          <div id='input-parent'>
+<!-- Player's guess input, and submit button -->
+            <form>
+              <input id="player-input" type="text" placeholder="#" autofocus="autofocus" maxlength="3">
+              <button id="submit">Go!</button>
+            </form>
+          </div>
+          <div id='guesses' >
+<!-- unordered list of guesses -->
+            <ul>
+              <li class="guess" id="guess1">--</li>
+              <li class="guess" id="guess2">--</li>
+              <li class="guess" id="guess3">--</li>
+              <li class="guess" id="guess4">--</li>
+              <li class="guess" id="guess5">--</li>
+            </ul>
+          </div>
+          <div id="menu-btns" >
+            <button class ="btn btn-warning" id="reset">Reset</button>
+            <button class="btn btn-info" id="hint">Hint</button>
+<!-- reset and hint buttons -->
+          </div>
+        </div>
+      </div>
+    <div id='footer'>
+        <div class="row">
+          <div class='col-xs-4'>
+            <img class="img img-repsonsive" src='fa-logo@2x.png'></img>
+          </div>
+          <div class='col-xs-4'>
+            <h4>Project by Corryn Young</h4>
+          </div>
+          <div class='col-xs-4'>
+            <img class="img img-responsive" src='grace_hopper_academy.png'></img>
+          </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script src="GuessingGame.js"></script>
+  </body>
+</html>
